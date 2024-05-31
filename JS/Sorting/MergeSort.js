@@ -1,30 +1,30 @@
-function merge(arr1, arr2) 
+function merge(nums1, nums2) 
 {
     let result = [];
     let i = 0, j = 0;
-    while(i<arr1.length && j<arr2.length )
+    while(i<nums1.length && j<nums2.length )
     {
-        if(arr1[i] < arr2[j])
+        if(nums1[i] < nums2[j])
         {
-            result.push(arr1[i]);
+            result.push(nums1[i]);
             i++;
         }
         else
         {
-            result.push(arr2[j]);
+            result.push(nums2[j]);
             j++;
         }
     }
     
-    while(i<arr1.length)
+    while(i<nums1.length)
     {
-        result.push(arr1[i]);
+        result.push(nums1[i]);
         i++;    
     }
 
-    while(j<arr2.length)
+    while(j<nums2.length)
     {
-        result.push(arr2[j]);
+        result.push(nums2[j]);
         j++;    
     }
 
